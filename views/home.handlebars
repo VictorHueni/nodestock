@@ -1,2 +1,12 @@
-<h1>This is my homepage</h1>
-<p>{{ stuff }}</p>
+<br>
+<div class="jumbotron">
+    <h1 class="display-4">{{stock.companyName}} ({{stock.symbol}})</h1>
+    <strong>Lastest Price: </strong>${{stock.latestPrice}}<br>
+    <strong>Previous Close: </strong>${{stock.previousClose}}<br>
+    <strong>Change Percent: </strong>{{stock.changePercent}}%<br>
+    <strong>Volume: </strong>{{stock.volume}}<br>
+    <strong>Market Cap: </strong>${{stock.marketCap}}<br>
+    <strong>Year to Date Change: </strong>{{stock.ytdChange}}%<br>
+    <strong>52wk High: </strong>${{stock.week52High}}<br>
+    <strong>52wk Low: </strong>${{stock.week52Low}}<br>
+</div>
